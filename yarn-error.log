@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add react-tostify
+
+PATH: 
+  /home/litterpigger/.vscode-server/bin/e170252f762678dec6ca2cc69aba1570769a5d39/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/System32/HWAudioDriverLibs:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/d/HtmlDesign/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/d/Python/python.exe:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/Li/AppData/Local/Microsoft/WindowsApps:/mnt/d/intellij/IntelliJ IDEA 2022.2.3/bin:/mnt/d/intellij/IntelliJ IDEA Community Edition 2022.2.3/bin:/mnt/d/VSC/Microsoft VS Code/bin:/mnt/c/Users/Li/AppData/Roaming/npm:/snap/bin:/home/litterpigger/.foundry/bin:/home/litterpigger/.foundry/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  21.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react-tostify: Not found
+      at params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66145:18)
+      at self.callback (/usr/share/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:519:28)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:519:28)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:633:28)
+      at IncomingMessage.emit (node:events:531:35)
+      at endReadableNT (node:internal/streams/readable:1696:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient_text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_bg {
+  background: rgb(161, 45, 63);
+  background: -moz-linear-gradient(90deg, rgba(161, 45, 63, 1) 0%, rgba(106, 27, 67, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(161, 45, 63, 1) 0%, rgba(106, 27, 67, 1) 100%);
+  background: linear-gradient(90deg, rgba(161, 45, 63, 1) 0%, rgba(106, 27, 67, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a12d3f", endColorstr="#6a1b43", GradientType=1);
+}

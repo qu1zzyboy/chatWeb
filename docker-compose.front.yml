@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  frontend:
+    build:
+      context: ./public
+    environment:
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - "/app/server/nodemodule"
+      - "frontNode:/app/public"

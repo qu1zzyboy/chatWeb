@@ -1,0 +1,53 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  backend:
+    build:
+      context: ./server
+      args:
+        NODE_ENV: DEV
+    ports:
+      - "4000:4000"
+    environment:
+      - MONGO_USER=litterpigger
+      - MONGO_PASSWORD=lhb1999114
+      - PORT=4000
+    volumes:
+      - ./server:/app/server
+      - nodemodule:/app/server/nodemodules
+    command: npm run dev
+
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: litterpigger
+      MONGO_INITDB_ROOT_PASSWORD: lhb1999114
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: litterpigger
+      ME_CONFIG_MONGODB_ADMINPASSWORD: lhb1999114
+      ME_CONFIG_BASICAUTH_USERNAME: hanbo
+      ME_CONFIG_BASICAUTH_PASSWORD: hanboli
+      ME_CONFIG_MONGODB_URL: mongodb://litterpigger:lhb1999114@mongo:27017/
+
+  frontend:
+    build:
+      context: ./public
+    environment:
+      - PORT=3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./public:/app/public"
+      - "frontNode:/app/public/nodemodules"
+
+volumes:
+  nodemodule:
+  frontNode:
